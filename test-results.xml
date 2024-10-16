@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.021" tests="9" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-10-16T14:41:14" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="SuperTool" timestamp="2024-10-16T14:41:14" tests="0" file="/Users/Laura/Desktop/cicd/app/tests/SuperTool.tests.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="validateState (static)" timestamp="2024-10-16T14:41:14" tests="2" file="/Users/Laura/Desktop/cicd/app/tests/SuperTool.tests.js" time="0.015" failures="0">
+    <testcase name="SuperTool validateState (static) throws if the value is not a valid state" time="0.003" classname="throws if the value is not a valid state">
+    </testcase>
+    <testcase name="SuperTool validateState (static) returns nothing on a valid state" time="0.001" classname="returns nothing on a valid state">
+    </testcase>
+  </testsuite>
+  <testsuite name="constructor" timestamp="2024-10-16T14:41:14" tests="2" file="/Users/Laura/Desktop/cicd/app/tests/SuperTool.tests.js" time="0.001" failures="0">
+    <testcase name="SuperTool constructor is created with default state" time="0.000" classname="is created with default state">
+    </testcase>
+    <testcase name="SuperTool constructor can be created with an explicit initial state" time="0.000" classname="can be created with an explicit initial state">
+    </testcase>
+  </testsuite>
+  <testsuite name="state" timestamp="2024-10-16T14:41:14" tests="2" file="/Users/Laura/Desktop/cicd/app/tests/SuperTool.tests.js" time="0.002" failures="0">
+    <testcase name="SuperTool state returns the current state if no value is given" time="0.000" classname="returns the current state if no value is given">
+    </testcase>
+    <testcase name="SuperTool state sets the current state if the state is a valid state value" time="0.000" classname="sets the current state if the state is a valid state value">
+    </testcase>
+  </testsuite>
+  <testsuite name="execute" timestamp="2024-10-16T14:41:14" tests="1" file="/Users/Laura/Desktop/cicd/app/tests/SuperTool.tests.js" time="0.001" failures="0">
+    <testcase name="SuperTool execute executes the current state" time="0.000" classname="executes the current state">
+    </testcase>
+  </testsuite>
+  <testsuite name="exists" timestamp="2024-10-16T14:41:14" tests="2" file="/Users/Laura/Desktop/cicd/app/tests/utils.tests.js" time="0.001" failures="0">
+    <testcase name="exists returns true if the given parameter is defined" time="0.000" classname="returns true if the given parameter is defined">
+    </testcase>
+    <testcase name="exists returns false if the given parameter is undefined or null" time="0.001" classname="returns false if the given parameter is undefined or null">
+    </testcase>
+  </testsuite>
+</testsuites>
