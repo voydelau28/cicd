@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  sonarcloud: sonarsource/sonarcloud@2.0.0 
+
 jobs:
   test:
     working_directory: ~/repo
@@ -30,6 +33,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
+      - sonarcloud/scan 
 
   deploy:
     working_directory: ~/repo
@@ -61,6 +65,7 @@ workflows:
   test-deploy:
     jobs:
       - test:
+          context: SonarCloud
           filters:
             branches:
               only: main
